@@ -1,0 +1,269 @@
+$font-family: "Raleway", sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+/*   Navbar Styles   */
+
+/*   Navbar Styles   */
+
+nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(210, 210, 210, 0.7);
+    padding: 5px;
+}
+
+nav>a {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000
+}
+
+nav>a:hover {
+    background-color: grey;
+}
+   
+
+nav>a:last-of-type:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: 100vh;
+    filter: grayscale(50%);
+    object-fit: cover;
+}
+.container .caption {
+    position: absolute;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    right: 50%;
+    transform: translate(50%, 50%);
+    bottom: 50%;
+}
+
+.caption h1 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 64px;
+}
+
+.caption h1+h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+.caption h2 b {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+
+.main {
+    background-color: #ffdddd;
+    padding: 64px 0;
+    filter: grayscale(50%);
+}
+
+/* Content Section */
+
+.content {
+    padding: 0 16px;
+    max-width: 980px;
+    margin: 0 auto 60px;
+
+
+ h1 {
+    color: grey;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+
+ p {
+    line-height: 2;
+    margin-bottom: 40px;
+}
+ }
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.content .button {
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    margin: 20px;
+
+
+&:hover {
+    background-color: #ccc;
+    color: #444;
+}
+}
+
+/* Flowers Section */
+
+.flowers {
+    height: 100vh;
+    background-image: url("https://www.w3schools.com/html/flowers.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+h2 {
+    font-size: 64px;
+    font-weight: 400;
+
+
+div {
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;}
+}
+
+}
+
+
+/* Wedding Section */
+
+.wedding-section {
+    padding: 64px 16px;
+    max-width: 980px;
+    margin: 0 auto 60px;
+
+
+ img {
+    width: 100%;
+    margin-bottom: 30px;
+
+
+ h1 {
+    color: grey;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ }
+}
+
+
+.wedding-section .text-wrapper {
+    margin-top: 40px;
+    display: flex;
+}
+
+.text-wrapper > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.when > div, .where > div {
+    margin-top: 20px;
+}
+
+/* RSVP Section */
+
+.rsvp {
+    background-color: #ffdddd;
+    padding: 64px 16px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+ h3 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+
+
+ p {
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+ }
+}
+}
+
+
+.rsvp .button {
+    background-color: #f443368a;
+    color: white;
+    width: 200px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 22px;
+
+
+&:hover {
+    background-color: #ccc;
+    color: #444;
+}
+}
+
+
+footer {
+    margin-bottom: 60px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
